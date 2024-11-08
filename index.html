@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Enlace al documento de estilos de la página web -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Enlace al documento de scripts de la página web -->
+    <script src="js/script.js" defer></script>
+
+    <title>The Fastet Food</title>
+
+  </head>
+
+  <body>
+
+    <!-- Navbar con todos los botones -->
+    <nav class="nav-bar">
+
+      <!-- Botón del logotipo -->
+      <button onclick="logoClicked(), populateWrapper()">
+        <img
+          class="logo"
+          src="assets/logo.png"
+          alt="Logo of The Fastest Food"
+        />
+      </button>
+
+      <!-- Botones de las principales pestañas -->
+      <div class="nav-tabs">
+        <button id="navTabsBtn" onclick="aboutClicked(), populateWrapper()">ABOUT</button>
+        <button id="navTabsBtn" onclick="menuClicked(), populateWrapper()">MENU</button>
+        <button id="navTabsBtn" onclick="workClicked(), populateWrapper()">HOW DO WE WORK?</button>
+        <button id="navTabsBtn" onclick="faqsClicked(), populateWrapper()">FAQs</button>
+      </div>
+
+      <!-- Botones de la cuenta y del carrito -->
+      <ul class="nav-personal">
+        <button id="accountBtn" title="Account" onclick="accountClicked(), populateWrapper()">
+          <img src="assets/account.png" alt="Account" />
+        </button>
+
+        <button id="basketBtn" title="Basket" onclick="basketClicked(), populateWrapper()">
+          <img src="assets/basket.png" alt="Basket" />
+        </button>
+      </ul>
+    </nav>
+
+    <!-- Sección que se genera a partir del JavaScript -->
+    <section class="wrapper" id="wrapper"></section>
+  </body>
+</html>
