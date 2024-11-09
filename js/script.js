@@ -1,71 +1,71 @@
 /**
- * Texto del botón clicado
+ * Nombre del botón clicado
  *
  * @type {string}
  */
-let text
+let btnName
 
 /**
- * Asigna a la variable text el valor 'Logo'
+ * Asigna a la variable btnName el valor 'Logo'
  *
  * @returns {string}
  */
 function logoClicked() {
-  return (text = 'Logo')
+  return (btnName = 'Logo')
 }
 
 /**
- * Asigna a la variable text el valor 'About'
+ * Asigna a la variable btnName el valor 'About'
  *
  * @returns {string}
  */
 function aboutClicked() {
-  return (text = 'About')
+  return (btnName = 'About')
 }
 
 /**
- * Asigna a la variable text el valor 'Menu'
+ * Asigna a la variable btnName el valor 'Menu'
  *
  * @returns {string}
  */
 function menuClicked() {
-  return (text = 'Menu')
+  return (btnName = 'Menu')
 }
 
 /**
- * Asigna a la variable text el valor 'How do we work?'
+ * Asigna a la variable btnName el valor 'How do we work?'
  *
  * @returns {string}
  */
 function workClicked() {
-  return (text = 'How do we work?')
+  return (btnName = 'How do we work?')
 }
 
 /**
- * Asigna a la variable text el valor 'FAQs'
+ * Asigna a la variable btnName el valor 'FAQs'
  *
  * @returns {string}
  */
 function faqsClicked() {
-  return (text = 'FAQs')
+  return (btnName = 'FAQs')
 }
 
 /**
- * Asigna a la variable text el valor 'Account'
+ * Asigna a la variable btnName el valor 'Account'
  *
  * @returns {string}
  */
 function accountClicked() {
-  return (text = 'Account')
+  return (btnName = 'Account')
 }
 
 /**
- * Asigna a la variable text el valor 'Basket'
+ * Asigna a la variable btnName el valor 'Basket'
  *
  * @returns {string}
  */
 function basketClicked() {
-  return (text = 'Basket')
+  return (btnName = 'Basket')
 }
 
 /**
@@ -77,9 +77,8 @@ function populateWrapper() {
   // @ts-ignore
   wrapper.innerHTML = `
     <h4>Has clicado en</h4>
-    <p class="result">${text}</p>
+    <p class="result">${btnName}</p>
   `
-  return 'Populated!'
 }
 
 module.exports = {
