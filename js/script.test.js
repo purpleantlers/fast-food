@@ -1,4 +1,12 @@
-const { logoClicked, aboutClicked, menuClicked, workClicked, faqsClicked, accountClicked, basketClicked, populateWrapper } = require('./script')
+const {
+  logoClicked,
+  aboutClicked,
+  menuClicked,
+  workClicked,
+  faqsClicked,
+  accountClicked,
+  basketClicked,
+} = require('./script')
 
 test('return Logo', () => {
   expect(logoClicked()).toBe('Logo')
@@ -22,10 +30,6 @@ test('return FAQs', () => {
 
 test('return Account', () => {
   expect(accountClicked()).toBe('Account')
-})
-
-test('return Basket', () => {
-  expect(basketClicked()).toBe('Basket')
 })
 
 test('return Basket', () => {

@@ -88,6 +88,5 @@ module.exports = {
   workClicked,
   faqsClicked,
   accountClicked,
-  basketClicked,
-  populateWrapper
+  basketClicked
 }
